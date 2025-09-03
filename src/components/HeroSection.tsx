@@ -36,12 +36,8 @@ export function HeroSection() {
             {/* Stats */}
             <div className="mt-12 grid grid-cols-3 gap-8">
               <div>
-                <div className="text-2xl font-bold text-blue-600">99.5%</div>
+                <div className="text-2xl font-bold text-blue-600">92.5%</div>
                 <div className="text-sm text-gray-600">Precisão</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-blue-600">{"<"}2s</div>
-                <div className="text-sm text-gray-600">Tempo de Resposta</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-blue-600">LGPD</div>

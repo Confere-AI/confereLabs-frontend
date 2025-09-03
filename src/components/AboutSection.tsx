@@ -31,7 +31,16 @@ export function AboutSection() {
   ];
 
   const technologies = [
-    'Python', 'FastAPI', 'OpenCV', 'TensorFlow', 'React', 'TypeScript', 'Docker', 'PostgreSQL'
+    { name: 'Flutter', stack: 'Mobile', color: 'bg-purple-100 text-green-800' },
+    { name: 'React', stack: 'Frontend', color: 'bg-green-100 text-purple-800' },
+    { name: 'Tailwind', stack: 'Frontend', color: 'bg-green-100 text-purple-800' },
+    { name: 'Node.js', stack: 'Backend', color: 'bg-green-100 text-green-800' },
+    { name: 'Express', stack: 'Backend', color: 'bg-green-100 text-green-800' },
+    { name: 'PostgreSQL', stack: 'Database', color: 'bg-blue-100 text-blue-800' },
+    { name: 'MediaPipe', stack: 'AI/ML', color: 'bg-purple-100 text-purple-800' },
+    { name: 'TensorFlow', stack: 'AI/ML', color: 'bg-purple-100 text-purple-800' },
+    { name: 'LangChain', stack: 'AI/ML', color: 'bg-purple-100 text-purple-800' },
+    { name: 'Gemkit', stack: 'AI/ML', color: 'bg-purple-100 text-purple-800' }
   ];
 
   return (
@@ -121,15 +130,65 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-8">
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8">
-              <div className="text-center mb-6">
+              <div className="text-center mb-8">
                 <Users className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900">Equipe</h3>
+                <h3 className="text-xl font-bold text-gray-900">Nossa Equipe</h3>
+                <p className="text-gray-500 text-sm mt-2">
+                  Profissionais dedicados à inovação em IA
+                </p>
               </div>
-              <p className="text-gray-600 text-center leading-relaxed">
-                Desenvolvido por uma equipe multidisciplinar de engenheiros de software, 
-                especialistas em IA e designers UX, todos comprometidos com a excelência 
-                técnica e a inovação responsável.
-              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">João Pedro</h4>
+                    <p className="text-blue-600 text-sm">Backend Developer & Founder</p>
+                  </div>
+                  <Badge variant="outline" className="bg-blue-50 text-blue-700">
+                    Backend/ML
+                  </Badge>
+                </div>
+                
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">João Guilherme</h4>
+                    <p className="text-blue-600 text-sm">Frontend Developer</p>
+                  </div>
+                  <Badge variant="outline" className="bg-green-50 text-green-700">
+                    Frontend
+                  </Badge>
+                </div>
+                
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Lucas Moreira</h4>
+                    <p className="text-blue-600 text-sm">AI Developer</p>
+                  </div>
+                  <Badge variant="outline" className="bg-purple-50 text-purple-700">
+                    AI/ML
+                  </Badge>
+                </div>
+                
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Melky</h4>
+                    <p className="text-blue-600 text-sm">Backend Developer</p>
+                  </div>
+                  <Badge variant="outline" className="bg-blue-50 text-blue-700">
+                    Backend
+                  </Badge>
+                </div>
+                
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Glauckyon</h4>
+                    <p className="text-blue-600 text-sm">AI Developer</p>
+                  </div>
+                  <Badge variant="outline" className="bg-purple-50 text-purple-700">
+                    AI/ML
+                  </Badge>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
@@ -138,12 +197,18 @@ export function AboutSection() {
               <div className="text-center mb-6">
                 <Code2 className="w-10 h-10 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900">Tecnologias</h3>
+                <p className="text-gray-500 text-sm mt-2">
+                  Stack tecnológico utilizado no projeto
+                </p>
               </div>
-              <div className="flex flex-wrap gap-2 justify-center">
+              <div className="flex flex-wrap gap-3 justify-center">
                 {technologies.map((tech, index) => (
-                  <Badge key={index} variant="secondary" className="bg-blue-100 text-blue-800">
-                    {tech}
-                  </Badge>
+                  <div key={index} className="flex flex-col items-center gap-1">
+                    <Badge variant="secondary" className={tech.color}>
+                      {tech.name}
+                    </Badge>
+                    <span className="text-xs text-gray-500">{tech.stack}</span>
+                  </div>
                 ))}
               </div>
             </CardContent>

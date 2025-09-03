@@ -44,6 +44,12 @@ export function ContactSection() {
       name: 'LinkedIn',
       url: 'https://linkedin.com/company/confereai',
       description: 'Atualizações profissionais'
+    },
+    {
+      icon: Mail,
+      name: 'Email Newsletter',
+      url: 'https://conferelabs.com/newsletter',
+      description: 'Novidades e artigos diretamente no seu inbox'
     }
   ];
 
@@ -190,33 +196,6 @@ export function ContactSection() {
                 })}
               </div>
             </div>
-
-            {/* Quick Stats */}
-            <Card className="bg-blue-50 border-blue-200">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
-                  Estatísticas de Atendimento
-                </h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">24h</div>
-                    <div className="text-sm text-gray-600">Tempo de resposta</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">98%</div>
-                    <div className="text-sm text-gray-600">Satisfação</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">5 dias</div>
-                    <div className="text-sm text-gray-600">Implementação média</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">24/7</div>
-                    <div className="text-sm text-gray-600">Suporte técnico</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

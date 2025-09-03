@@ -21,7 +21,6 @@ export function DocumentationSection() {
       title: 'Guia Rápido',
       description: 'Primeiros passos com o ConfereAI - instalação e configuração básica',
       type: 'Getting Started',
-      time: '10 min',
       color: 'blue'
     },
     {
@@ -29,7 +28,7 @@ export function DocumentationSection() {
       title: 'API Reference',
       description: 'Documentação completa dos endpoints REST e webhooks disponíveis',
       type: 'Technical',
-      time: '30 min',
+
       color: 'green'
     },
     {
@@ -37,16 +36,8 @@ export function DocumentationSection() {
       title: 'Tutoriais em Vídeo',
       description: 'Passo a passo visual para integração e uso avançado',
       type: 'Tutorial',
-      time: '45 min',
+
       color: 'purple'
-    },
-    {
-      icon: MessageCircleQuestion,
-      title: 'FAQ Técnico',
-      description: 'Respostas para as dúvidas mais comuns sobre implementação',
-      type: 'Support',
-      time: '15 min',
-      color: 'orange'
     }
   ];
 
@@ -132,7 +123,7 @@ export function DocumentationSection() {
         </div>
 
         {/* Documentation Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {docSections.map((section, index) => {
             const Icon = section.icon;
             return (
@@ -144,8 +135,6 @@ export function DocumentationSection() {
                   <CardTitle className="text-lg">{section.title}</CardTitle>
                   <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
                     <Badge variant="outline">{section.type}</Badge>
-                    <span>•</span>
-                    <span>{section.time}</span>
                   </div>
                 </CardHeader>
                 <CardContent className="text-center">

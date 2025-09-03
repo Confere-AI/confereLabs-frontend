@@ -7,10 +7,10 @@ import { Calendar, Clock, ArrowRight, User, TrendingUp } from 'lucide-react';
 export function BlogSection() {
   const posts = [
     {
-      title: 'O Futuro do Reconhecimento Facial na Educação',
-      excerpt: 'Como a IA está transformando a maneira como controlamos presença em salas de aula, mantendo a privacidade dos estudantes.',
+      title: 'Como surgiu a ideia do ConfereAI?',
+      excerpt: 'Como pensamos no nome, na ideia inicial e nos primeiros passos do projeto.',
       image: 'https://images.unsplash.com/photo-1723987135977-ae935608939e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwY2xhc3Nyb29tJTIwc3R1ZGVudHMlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc1NjgyNzQzN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      category: 'Educação',
+      category: 'Ideia',
       date: '15 Jan 2024',
       readTime: '8 min',
       author: 'Equipe ConfereAI',
@@ -66,10 +66,10 @@ export function BlogSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Blog & Tutoriais
+            Blog
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Artigos técnicos, tutoriais e insights sobre IA, reconhecimento facial e inovação
+            Artigos e insights sobre IA, reconhecimento facial e inovação
           </p>
         </div>
 
@@ -118,7 +118,8 @@ export function BlogSection() {
                     </div>
                   </div>
                   <Button className="flex items-center gap-2">
-                    Ler Artigo
+                    <a href="https://medium.com/@joaopedrooliveira030506/confereai-revolutionizing-attendance-tracking-with-facial-recognition-3e094cd4527f" target="_blank" rel="noopener noreferrer">Ler Artigo</a>
+                    
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </div>
@@ -176,29 +177,6 @@ export function BlogSection() {
             </Card>
           ))}
         </div>
-
-        {/* Newsletter Signup */}
-        <Card className="bg-blue-600 text-white border-0">
-          <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Fique por Dentro das Novidades
-            </h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Receba atualizações sobre novas funcionalidades, artigos técnicos e 
-              dicas de implementação diretamente no seu email.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="seu@email.com"
-                className="flex-1 px-4 py-2 rounded-lg text-gray-900"
-              />
-              <Button variant="secondary">
-                Inscrever-se
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
