@@ -6,7 +6,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-      { name: 'Sobre', href: '#about' },
+    { name: "Hero", href: "#hero"},
+    { name: 'Sobre', href: '#about' },
     { name: 'Funcionalidades', href: '#features' },
     { name: 'Documentação', href: '#docs' },
     { name: 'Blog', href: '#blog' },

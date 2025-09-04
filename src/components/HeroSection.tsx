@@ -4,7 +4,7 @@ import { ArrowRight, Play } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white">
+    <section id="hero" className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
           {/* Text Content */}
