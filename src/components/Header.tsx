@@ -19,7 +19,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <a href="#hero">
-              <img src="./src/imgs/logo-removebg-preview.png" id='img-logo' alt="" width={200} height={200} style={{ objectFit: 'contain' }} />
+              <img src="/imgs/logo-removebg-preview.png" alt="Logo" id='img-logo' width={200} height={200} style={{ objectFit: 'contain' }} />
             </a>
           </div>
 
