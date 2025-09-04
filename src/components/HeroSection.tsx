@@ -20,7 +20,7 @@ export function HeroSection() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
-                <a href="#about" className="flex items-center gap-2">
+                <a href="" className="flex items-center gap-2">
                   Acesse o ConfereAI
                   <ArrowRight className="w-4 h-4" />
                 </a>
