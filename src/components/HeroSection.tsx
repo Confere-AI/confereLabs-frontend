@@ -19,12 +19,12 @@ export function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild>
-                <a href="" className="flex items-center gap-2">
-                  Acesse o ConfereAI
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </Button>
+                <Button size="lg" asChild>
+                  <a href="/under-construction" className="flex items-center gap-2">
+                    Acesse o ConfereAI
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </Button>
               <Button variant="outline" size="lg" asChild>
                 <a href="#docs" className="flex items-center gap-2">
                   <Play className="w-4 h-4" />

@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { ProblemSolutionSection } from './components/ProblemSolutionSection';
@@ -8,42 +9,32 @@ import { DocumentationSection } from './components/DocumentationSection';
 import { BlogSection } from './components/BlogSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import UnderConstruction from './components/UnderConstruction';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Fixed Header */}
-      <Header />
-      
-      {/* Main Content */}
-      <main>
-        {/* Hero Section */}
-        <HeroSection />
-        
-        {/* Problem & Solution */}
-        <ProblemSolutionSection />
-        
-        {/* Features */}
-        <FeaturesSection />
-        
-        {/* Use Cases */}
-        <UseCasesSection />
-        
-        {/* About */}
-        <AboutSection />
-        
-        {/* Documentation & Roadmap */}
-        <DocumentationSection />
-        
-        {/* Blog */}
-        <BlogSection />
-        
-        {/* Contact */}
-        <ContactSection />
-      </main>
-      
-      {/* Footer */}
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-white">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <HeroSection />
+                <ProblemSolutionSection />
+                <FeaturesSection />
+                <UseCasesSection />
+                <AboutSection />
+                <DocumentationSection />
+                <BlogSection />
+                <ContactSection />
+              </>
+            } />
+            <Route path="/under-construction" element={<UnderConstruction />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
