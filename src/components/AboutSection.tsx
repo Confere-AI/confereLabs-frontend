@@ -141,7 +141,7 @@ export function AboutSection() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                   <div>
-                    <h4 className="font-semibold text-gray-900">João Pedro</h4>
+                    <h4 className="font-semibold text-gray-900">João Pedro de Oliveira Matos</h4>
                     <p className="text-blue-600 text-sm">Backend Developer & Founder</p>
                   </div>
                   <Badge variant="outline" className="bg-blue-50 text-blue-700">
@@ -151,7 +151,7 @@ export function AboutSection() {
                 
                 <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                   <div>
-                    <h4 className="font-semibold text-gray-900">João Guilherme</h4>
+                    <h4 className="font-semibold text-gray-900">João Guilherme Da Silva Magalhães</h4>
                     <p className="text-blue-600 text-sm">Frontend Developer</p>
                   </div>
                   <Badge variant="outline" className="bg-green-50 text-green-700">
@@ -171,7 +171,7 @@ export function AboutSection() {
                 
                 <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                   <div>
-                    <h4 className="font-semibold text-gray-900">Melky</h4>
+                    <h4 className="font-semibold text-gray-900">Melchisedek de Sousa Lima</h4>
                     <p className="text-blue-600 text-sm">Backend Developer</p>
                   </div>
                   <Badge variant="outline" className="bg-blue-50 text-blue-700">
